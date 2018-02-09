@@ -120,7 +120,7 @@ export default () =>
                             <div className='card card__spacer card--new'>
                                 <h3 className='card__title'>Новинка!</h3>
                                 <p className='card__subtitle'>RedVerg - высокое качество по разумной цене.</p>
-                                <svg className='card__sell-icon' xmlns='http://www.w3.org/2000/svg' width='25'
+                                <svg className='card__sell-icon' width='25'
                                      height='25' viewBox='0 0 25 25'><title> Shape</title>
                                     <desc> Created with Sketch.</desc>
                                     <g fill='none'>
