@@ -8,11 +8,9 @@ export class Catalog extends Component {
     }
 
     render() {
-        const {tools} = this.state
         return (
             <div className={s.container}>
                 <div className={s.catalogWrapper}>
-                    {/*{tools && map.forEach(item => {return item})}*/}
                 </div>
             </div>
         )
