@@ -1,0 +1,123 @@
+@import '../../css/global/variables';
+
+.swiper-container {
+	width: 100%;
+	height: 470px;
+	user-select: text;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	.btn__promo {
+		display: none;
+	}
+}
+
+.promo__text-group {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.promo__title {
+	margin-top: 50px;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: $fontfamily-ptsans;
+	font-size: $fontsize-big;
+	font-weight: normal;
+}
+
+.promo__subtitle {
+	margin-top: 220px;
+	font-weight: normal;
+	font-size: $fontsize-h3;
+	color: $color-grey;
+}
+
+.swiper-slide {
+	user-select: text;
+	background-repeat: no-repeat;
+	background-size: 300px;
+	background-position: 49% 47%;
+	background-image: url('../../img/redverg-rd-ss95.jpg');
+}
+
+.swiper-slide--2 {
+	background-position: 50% 57%;
+	background-size: 175px;
+	background-image: url('../../img/redverg-id500s.jpg');
+}
+
+.swiper-slide--3 {
+	user-select: text;
+	background-position: 56% 58%;
+	background-size: 135px;
+	background-image: url('../../img/redverg-rd-gb226.jpeg');
+}
+
+@media (min-width: $tablet-widths) {
+
+	.swiper-container {
+		height: 550px;
+		.btn__promo {
+			display: block;
+		}
+	}
+
+	.promo__text-group {
+		text-align: left;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		z-index: 3;
+		width: 80%;
+	}
+
+	.promo__title {
+		margin-top: 0;
+		padding-left: 0;
+		margin-bottom: 60px;
+		font-size: $fontsize-h3;
+	}
+
+	.promo__subtitle {
+		display: block;
+		font-size: $fontsize-h3;
+		margin-top: 0;
+	}
+
+	.swiper-slide {
+		background-size: 450px;
+		background-position: 89% 47%;
+	}
+
+	.swiper-slide--2 {
+		background-position: 82% 19%;
+		background-size: 300px;
+	}
+
+	.swiper-slide--3 {
+		background-position: 90% 7%;
+		background-size: 260px;
+	}
+}
+
+@media (min-width: $desktop-widths) {
+	.swiper-container {
+		max-width: 1470px;
+	}
+
+	.swiper-slide {
+		background-size: 700px;
+		background-position: 82% 32%;
+	}
+
+	.swiper-slide--2 {
+		background-position: 75% 44%;
+		background-size: 410px;
+	}
+
+	.swiper-slide--3 {
+		background-size: 350px;
+	}
+}

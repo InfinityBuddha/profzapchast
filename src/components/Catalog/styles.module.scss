@@ -1,0 +1,38 @@
+@import '../../css/global/variables';
+.container {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 24px;
+	flex-grow: 1;
+	padding: 20px;
+}
+
+.catalogWrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.title {
+	font-size: 2em;
+	margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-widths) {
+	.container {
+		width: 670px;
+		padding: 0;
+	}
+}
+
+@media (min-width: $desktop-widths) {
+	.title {
+		font-size: 2.5em;
+	}
+
+	.container {
+		width: 924px;
+		padding: 0;
+	}
+}

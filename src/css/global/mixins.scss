@@ -1,0 +1,14 @@
+@mixin container() {
+	margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media (min-width: $tablet-widths) {
+    padding: 0;
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-widths) {
+    max-width: 1050px;
+  }
+}

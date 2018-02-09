@@ -1,0 +1,110 @@
+.btn {
+	display: inline-block;
+	padding: 0.85em 3em;
+	line-height: 1.25rem;
+	font-family: 'PT Sans Caption', 'Helvetica', sans-serif;
+	font-size: 18px;
+	border-radius: 0.2rem;
+	border: none;
+	background-color: #EB5E55;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	cursor: pointer;
+	transition: all 0.1s ease-out 0.1s;
+
+	&--feedback {
+		padding: 0.85em 2em;
+		width: 100%;
+	}
+}
+
+.btn--secondary {
+	background-color: #59C9D5;
+}
+
+.btn--secondary:hover {
+	background-color: #45c2d0;
+}
+
+.btn--secondary:active {
+	background-color: #33bac8;
+}
+
+.btn--small {
+	font-size: 12px;
+}
+
+.btn__contacts {
+	width: 250px;
+	font-size: 16px;
+}
+
+.btn__contacts:hover {
+	background-color: #e8483e;
+}
+
+.btn__contacts:active {
+	background-color: #e63327;
+}
+
+.btn__tools {
+	padding: 0.5em 2em;
+	width: 100%;
+	background-color: transparent;
+	border: 2px solid #fff;
+	font-size: $fontsize-small;
+	color: #fff;
+}
+
+.btn__tools:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+.btn__tools:active {
+	opacity: 0.9;
+}
+
+.btn__promo {
+	display: none;
+	font-size: 14px;
+	width: 250px;
+}
+
+.btn__promo:hover {
+	background-color: #e8483e;
+}
+
+.btn__promo:active {
+	background-color: #e63327;
+}
+
+@media (min-width: $tablet-widths) {
+	.btn--feedback {
+		width: auto;
+	}
+
+	.btn__promo {
+		display: block;
+	}
+
+	.btn__tools {
+		font-size: $fontsize-base;
+	}
+}
+
+@media (min-width: $desktop-widths) {
+	.btn__form {
+		margin-bottom: 0;
+		margin-right: 20px;
+	}
+	.btn__form:last-child {
+		margin-right: 0px;
+	}
+	.btn__promo {
+		width: 290px;
+		font-size: 18px;
+	}
+}

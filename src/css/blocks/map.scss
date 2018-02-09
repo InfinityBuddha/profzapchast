@@ -1,0 +1,10 @@
+.map {
+	height: 350px;
+	width: 100%;
+}
+
+@media (min-width: $desktop-widths) {
+  .map {
+    height: 100%;
+  }
+}

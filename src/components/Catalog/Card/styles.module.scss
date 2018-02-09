@@ -1,0 +1,146 @@
+@import '../../../css/global/variables';
+.productCard {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	border: 1px solid rgba(201, 201, 201, 0.24);
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 10px;
+	padding-left: 60px;
+}
+
+.name {
+	font-size: 20px;
+	color: #444A59;
+	text-decoration: none;
+}
+
+.productCard:hover {
+	box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.productCard:active .productCard__container {
+	box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.productCard__title {
+	margin: 0;
+	font-size: 17px;
+	line-height: 24px;
+	width: 200px;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.productCard__iconcart {
+	fill: #d3d2d2;
+
+	&:hover {
+		fill: black;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.productCard__options {
+	flex-grow: 1;
+	font-size: 13px;
+	line-height: 30px;
+	margin-top: 9px;
+	color: black;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ececec;
+}
+
+.productCard__container {
+	position: absolute;
+}
+
+.productCard__photoContainer {
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+.productCard__photoContainer img {
+	object-fit: contain;
+}
+
+.productCard__buygroup {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.productCard__cart {
+	font-size: 0;
+	align-self: flex-end;
+	margin-left: auto;
+	width: 20px;
+	height: 20px;
+}
+
+.productCard__price {
+	position: absolute;
+	left: 29px;
+	bottom: 25px;
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #B12704;
+}
+
+@media (min-width: $tablet-widths) {
+	.productCard {
+		width: 50%;
+	}
+
+	.productCard__container {
+		display: flex;
+		flex-flow: column wrap;
+		flex-grow: 1;
+	}
+
+	.productCard__title {
+		font-size: 20px;
+		line-height: 20px;
+		width: 230px;
+	}
+
+	.productCard__price {
+		font-size: 17px;
+	}
+
+	.productCard__options {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: $desktop-widths) {
+
+	.productCard {
+		height: 300px;
+		width: 330px;
+	}
+
+	.name {
+		position: absolute;
+		left: 30px;
+		top: 30px;
+	}
+
+	.productCard__container {
+		justify-content: flex-end;
+	}
+}

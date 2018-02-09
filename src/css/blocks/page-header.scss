@@ -1,0 +1,25 @@
+.page-header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid $color-brand-card-border;
+	box-shadow: 0px 1px 1px $color-brand-card-border;
+}
+
+.page-header__container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@include container();
+}
+
+@media (min-width: $tablet-widths) {
+	.page-header__container {
+		flex-flow: row nowrap;
+		max-width: 1050px;
+	}
+}

@@ -1,0 +1,17 @@
+.section-title {
+  font-family: $fontfamily-ptsans;
+  font-size: $fontsize-big;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-title--left {
+	text-align: left;
+}
+
+@media (min-width: $desktop-widths) {
+  .section-title {
+    font-size: $fontsize-h2;
+  }
+
+}
