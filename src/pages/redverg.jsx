@@ -1,6 +1,18 @@
 import React from 'react'
+import Catalog from '../components/Catalog/Catalog'
 
-export default () =>
-    <div className='catalog__container'>
-        <h1 className='section-title section-title--left'>Каталог RedVerg</h1>
-    </div>
+export default ({data}) => {
+    return <Catalog data={data}/>
+}
+
+export const query = graphql`
+   query MyQueryName {
+     markdownRemark {
+      frontmatter {
+        title
+        price
+        path
+      }
+    }
+  }
+`
