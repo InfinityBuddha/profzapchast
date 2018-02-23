@@ -5,6 +5,8 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.6.0",
+    "contentful": "^5.1.1",
+    "contentful-management": "^4.2.0",
     "gatsby": "^1.9.63",
     "gatsby-link": "^1.6.21",
     "gatsby-plugin-netlify-cms": "^1.0.2",
@@ -20,7 +22,11 @@
     "react-apollo": "^2.0.4",
     "react-helmet": "^5.2.0",
     "react-id-swiper": "^1.5.8",
-    "react-load-script": "0.0.6"
+    "react-load-script": "0.0.6",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^0.16.0"
   },
   "keywords": [
     "gatsby"

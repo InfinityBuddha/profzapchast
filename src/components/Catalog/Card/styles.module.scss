@@ -6,8 +6,7 @@
 	border: 1px solid rgba(201, 201, 201, 0.24);
 	width: 100%;
 	margin-bottom: 30px;
-	padding: 10px;
-	padding-left: 60px;
+	padding: 60px;
 }
 
 .name {
@@ -98,7 +97,7 @@
 	font-size: 15px;
 	line-height: 24px;
 	font-weight: 400;
-	color: #B12704;
+	color: #444a59;
 }
 
 @media (min-width: $tablet-widths) {
@@ -119,7 +118,7 @@
 	}
 
 	.productCard__price {
-		font-size: 17px;
+		font-size: 22px;
 	}
 
 	.productCard__options {
@@ -130,8 +129,8 @@
 @media (min-width: $desktop-widths) {
 
 	.productCard {
-		height: 300px;
-		width: 330px;
+		height: 380px;
+		width: 262px;
 	}
 
 	.name {

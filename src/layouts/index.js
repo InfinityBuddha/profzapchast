@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export default ({children}) =>
-    <div>
+    <div className='root'>
         <Helmet
             title="Ремонт электроинструмента"
             meta={[

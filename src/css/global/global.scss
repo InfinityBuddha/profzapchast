@@ -6,6 +6,12 @@ body {
   font-family: $fontfamily-arsenal;
 }
 
+.root {
+	display: flex;
+	flex-flow: column nowrap;
+	min-height: 100vh;
+}
+
 img {
   width: 100%;
   max-width: 100%;
